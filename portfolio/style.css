@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 50px;
+}
+a,
+a:visited {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+body {
+  background-color: #1e1e1e;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+  position: sticky;
+  top: 0;
+  padding: 10px;
+  backdrop-filter: blur(5px);
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: aliceblue;
+}
+.landing_page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  font-size: 3rem;
+}
+.intro {
+  color: gray;
+}
+.name {
+  text-align: center;
+}
+.tagline {
+  margin: 2rem 0;
+  color: gray;
+  font-size: 2rem;
+  text-align: center;
+}
+.about_button {
+  background-color: transparent;
+  color: white;
+  padding: 5px 10px;
+  font-size: 1.5rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  outline: none;
+  transition: ease-in-out 0.15s;
+}
+.about_button:hover {
+  transform: scale(1.05);
+}
+#about_me {
+  background-color: #2d2d2d;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: max-content;
+  padding: 30px 10px;
+}
+.image_div {
+  flex: 0.2;
+}
+.about_text_div {
+  flex: 0.6;
+  font-size: 1.6rem;
+  color: aliceblue;
+  letter-spacing: 2px;
+  line-height: 3rem;
+  text-align: justify;
+}
+.my_image {
+  border: 2px solid violet;
+  padding: 5px;
+  height: 300px;
+  width: 300px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+#contact form {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  color: aliceblue;
+  line-height: 2rem;
+}
+
+.skill {
+  width: 50%;
+  background-color: #2d2d2d;
+  margin-inline: auto;
+  margin-block: 10px;
+  padding: 15px;
+  border-radius: 12px;
+}
+.skill-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.skills-img {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 1rem 0;
+  color: violet;
+}
+.input {
+  margin: 0.5rem 0;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 10px;
+  outline: none;
+  border: none;
+  caret-color: aliceblue;
+  font-size: 1.5rem;
+  transition: ease-in-out 0.1s;
+  border-radius: 5px;
+}
+.input:focus {
+  outline: 2px solid purple;
+  outline-offset: 2px;
+}
+
+.submit {
+  margin: 1rem 0;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  outline: 2px solid aliceblue;
+  font-size: 1.5rem;
+  color: aliceblue;
+  transition: ease-in-out 0.2s;
+}
+.submit:hover {
+  scale: 1.02;
+  background-color: rgba(255, 255, 255, 0.09);
+  outline: 2px solid purple;
+}
+
+@media (max-width: 688px) {
+  .landing_page {
+    font-size: 2rem;
+  }
+  .tagline {
+    font-size: 1.6rem;
+  }
+  #about_me {
+    flex-direction: column;
+  }
+
+  .my_image {
+    height: 200px;
+    width: 200px;
+  }
+  .about_text_div {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-align: justify;
+    padding: 10px;
+  }
+  #contact form {
+    width: 85%;
+  }
+  .skill {
+    width: 95%;
+  }
+  .skills-img {
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

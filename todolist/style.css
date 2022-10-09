@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #2e2e2e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.to-do-add {
+  width: 50%;
+  padding: 20px;
+  margin-block: 20px;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+}
+.to-do-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 10px;
+  caret-color: aliceblue;
+  color: aliceblue;
+  font-size: 1.5rem;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+}
+.to-do-input:focus {
+  outline: 2px solid purple;
+  outline-offset: 2px;
+}
+.to-do-add-button {
+  background-color: rgba(255, 255, 255, 0.05);
+  font-size: 1.3rem;
+  border-radius: 8px;
+  margin-inline: 8px;
+  padding: 5px;
+  color: aliceblue;
+  border: none;
+  outline: none;
+}
+.all-todo-container {
+  width: 50%;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: aliceblue;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 10px;
+}
+.todos {
+  width: 50%;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: aliceblue;
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 10px;
+}
+.to-do {
+  margin: 10px 0;
+  padding: 10px 0;
+  font-size: 1.5rem;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+.to-do-remove {
+  border-radius: 4px;
+  margin-left: 20px;
+  background-color: rgba(255, 41, 41, 0.333);
+  padding: 5px;
+}
